@@ -48,7 +48,15 @@ matrix:
       - ':is(code, pre, a.magiclink, span.keys)'
       - ':is(.MathJax_Preview, .md-nav__link, .md-footer-custom-text, .md-source__repository, .headerlink, .md-icon, .md-footer-social__link)'
   - pyspelling.filters.url:
-
+  - pyspelling.filters.context:
+      context_visible_first: true
+      delimiters:
+      # Ignore common social media tags or identifiers
+      - open: '\bgithub\b'
+        close: ''
+      - open: '\bgg\b'
+        close: ''
+        
 - name: markdown
   sources:
   - readme.md
