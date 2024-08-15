@@ -26,23 +26,23 @@ nav:
   - Installation: installation.md
   - User Guide: usage.md
   - About:
-    - Contributing &amp; Support: about/contributing.md
+    - Contributing & Support: about/contributing.md
     - License: about/license.md
 
 markdown_extensions:
-  - markdown.extensions.toc:
-      slugify: !!python/name:pymdownx.slugs.uslugify
+  - toc:
+      slugify: !!python/name:material.extensions.emoji.twemoji
       permalink: ""
-  - markdown.extensions.admonition:
-  - markdown.extensions.smarty:
+  - admonition
+  - smarty:
       smart_quotes: false
-  - pymdownx.betterem:
-  - markdown.extensions.attr_list:
-  - markdown.extensions.def_list:
-  - markdown.extensions.tables:
-  - markdown.extensions.abbr:
-  - markdown.extensions.md_in_html:
-  - pymdownx.superfences:
+  - pymdownx.betterem
+  - attr_list
+  - def_list
+  - tables
+  - abbr
+  - md_in_html
+  - pymdownx.superfences
   - pymdownx.highlight:
       extend_pygments_lang:
         - name: php-inline
@@ -53,34 +53,34 @@ markdown_extensions:
           lang: pycon
           options:
             python3: true
-  - pymdownx.inlinehilite:
+  - pymdownx.inlinehilite
   - pymdownx.magiclink:
       repo_url_shortener: true
       repo_url_shorthand: true
       social_url_shorthand: true
       user: facelessuser
       repo: RegReplace
-  - pymdownx.tilde:
-  - pymdownx.caret:
-  - pymdownx.smartsymbols:
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.smartsymbols
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.escapeall:
       hardbreak: true
       nbsp: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.progressbar:
-  - pymdownx.mark:
-  - pymdownx.striphtml:
+  - pymdownx.progressbar
+  - pymdownx.mark
+  - pymdownx.striphtml
   - pymdownx.snippets:
       base_path: docs/src/markdown/_snippets
   - pymdownx.keys:
       separator: "\uff0b"
-  - pymdownx.details:
-  - pymdownx.tabbed:
-  - pymdownx.saneheaders:
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.saneheaders
 
 extra:
   social:
@@ -94,4 +94,3 @@ plugins:
   - git-revision-date-localized
   - minify:
       minify_html: true
-  - mkdocs_pymdownx_material_extras
