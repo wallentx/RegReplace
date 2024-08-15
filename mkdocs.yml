@@ -31,7 +31,7 @@ nav:
 
 markdown_extensions:
   - toc:
-      slugify: !!python/name:material.extensions.emoji.twemoji
+      slugify: !!python/name:pymdownx.slugs.slugify
       permalink: ""
   - admonition
   - smarty:
