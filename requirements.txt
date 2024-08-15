@@ -1,0 +1,9 @@
+backrefs
+markupsafe
+mdpopups
+pygments
+pymdownx
+python-jinja2
+python-markdown
+pyyaml
+regex
